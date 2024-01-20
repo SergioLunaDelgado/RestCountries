@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col">
         <!-- <shared-search (onValue)="searchByRegion($event)" placeholder="Buscar por región"></shared-search> -->
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between flex-wrap gap-1">
             <button class="btn btn-outline-success" *ngFor="let region of regions" (click)="searchByRegion(region)"
                 [ngClass]="{'btn-success text-white':selectedRegion === region}">
                 {{ region }}
