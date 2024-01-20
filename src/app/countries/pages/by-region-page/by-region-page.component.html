@@ -2,13 +2,19 @@
 <hr>
 <div class="row">
     <div class="col">
-        <shared-search (onValue)="searchByRegion($event)" placeholder="Buscar por región"></shared-search>
+        <!-- <shared-search (onValue)="searchByRegion($event)" placeholder="Buscar por región"></shared-search> -->
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-outline-success" *ngFor="let region of regions" (click)="searchByRegion(region)"
+                [ngClass]="{'btn-success text-white':selectedRegion === region}">
+                {{ region }}
+            </button>
+        </div>
     </div>
 </div>
 <div class="row">
     <div class="col">
         <hr>
+        <shared-spinner *ngIf="!isLoading"></shared-spinner>
         <country-regionTabla [countries]="countries"></country-regionTabla>
     </div>
 </div>
-

@@ -10,8 +10,6 @@ import { CountryTablaComponent } from './components/country-tabla/country-tabla.
 import { CapitalTablaComponent } from './components/capital-tabla/capital-tabla.component';
 import { RegionTablaComponent } from './components/region-tabla/region-tabla.component';
 
-
-
 @NgModule({
   declarations: [
     ByCapitalPageComponent,
@@ -20,7 +18,7 @@ import { RegionTablaComponent } from './components/region-tabla/region-tabla.com
     CountryPageComponent,
     CountryTablaComponent,
     CapitalTablaComponent,
-    RegionTablaComponent
+    RegionTablaComponent,
   ],
   imports: [
     CommonModule,

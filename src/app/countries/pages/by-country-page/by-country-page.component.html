@@ -2,12 +2,13 @@
 <hr>
 <div class="row">
     <div class="col">
-        <shared-search (onValue)="searchByCountry($event)" placeholder="Buscar por país"></shared-search>
+        <shared-search (onDebounce)="searchByCountry($event)" placeholder="Buscar por país"></shared-search>
     </div>
 </div>
 <div class="row">
     <div class="col">
         <hr>
+        <shared-spinner *ngIf="!isLoading"></shared-spinner>
         <country-countryTabla [countries]="countries"></country-countryTabla>
     </div>
 </div>

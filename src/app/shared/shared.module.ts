@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { SearchComponent } from './components/search/search.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 
 
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     SidebarComponent,
     ContactComponent,
-    SearchComponent
+    SearchComponent,
+    SpinnerComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     SidebarComponent,
     ContactComponent,
-    SearchComponent
+    SearchComponent,
+    SpinnerComponent
   ]
 })
 export class SharedModule { }

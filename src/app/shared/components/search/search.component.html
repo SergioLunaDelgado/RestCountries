@@ -4,6 +4,7 @@
     id="buscar" 
     class="form-control" 
     [placeholder]="placeholder"
-    (keyup.enter)="emitValue(textInput.value)"
     #textInput
+    (keyup)="onKeyPress(textInput.value)"
 >
+<!-- (keyup.enter)="emitValue(textInput.value)" -->

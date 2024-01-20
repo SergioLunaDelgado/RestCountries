@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   /* con esta sintaxis rara puedo llamar el routing hijo - LAZYLOAD */
   { path: 'countries', loadChildren: () => import('./countries/countries.module').then(m => m.CountriesModule) },
-  // { path: '**', redirectTo: 'countries' }
+  { path: '**', redirectTo: 'countries' }
 ];
 
 @NgModule({
